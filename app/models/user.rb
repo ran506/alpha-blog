@@ -11,4 +11,6 @@ class User < ActiveRecord::Base
     format: { with: VALID_EMAIL_REGEX }
 
     validates :user_id, presence: true
+
+    has_secure_password
 end
